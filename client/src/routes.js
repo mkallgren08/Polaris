@@ -12,12 +12,9 @@ import Resource from "./pages/Resource";
 import EmergencyForm from "./pages/EmergencyForm/EmergencyForm";
 import EmergencyMap from "./pages/EmergencyMap/EmergencyMap";
 
-<<<<<<< HEAD
+
 //Setting up page routing.  Determining which pages are displayed
 //depending on users login status
-
-=======
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
 const auth = new Auth();
 
 const handleAuthentication = (nextState, replace) => {
@@ -33,14 +30,7 @@ export const makeMainRoutes = () => {
         <Route path="/" render={props => <App auth={auth} {...props} />} />
         <Route path="/home" render={props => <Home auth={auth} {...props} />} />
         <Route path="/blog" render={props => <Blog auth={auth} {...props} />} />
-<<<<<<< HEAD
         <Route path="/resource" render={props => <Resource auth={auth} {...props} />} />
-=======
-        <Route
-          path="/resource"
-          render={props => <Resource auth={auth} {...props} />}
-        />
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
         <Route
           path="/profile"
           render={props =>

@@ -14,12 +14,10 @@ class App extends Component {
   logout() {
     this.props.auth.logout();
   }
-<<<<<<< HEAD
+
 //Rendering navbar and buttons
   //configuring auth to display different buttons depending user being logged in
-=======
 
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
   render() {
     const { isAuthenticated } = this.props.auth;
 

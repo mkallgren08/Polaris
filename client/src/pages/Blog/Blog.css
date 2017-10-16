@@ -2,8 +2,6 @@
     margin: 20px;
     height: 250px;
     width: 250px;
-<<<<<<< HEAD
-=======
     border: solid 5px #CCC;
     background: #ffffff;
     transition: all 0.5s;
@@ -11,7 +9,6 @@
 }
 .blogImg:hover {
     transform: scale(1.1);
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
 }
 
 h1 {
@@ -20,11 +17,8 @@ h1 {
 
 a {
     text-align: center;
-<<<<<<< HEAD
 }
-=======
-    
-}
+
 a:hover {
     text-decoration: none;
 }
@@ -38,4 +32,4 @@ a:hover {
 .background-unfill {
     background: transparent!important;
 }
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
+

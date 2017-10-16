@@ -2,19 +2,12 @@
     margin: 20px;
     height: 250px;
     width: 250px;
-<<<<<<< HEAD
 }
 
 h1 {
     text-align: center;
 }
-=======
-    border: solid 5px #CCC;
-    background: #ffffff;
-    transition: all 0.5s;
-    background-size: cover;
-    border-radius: 30px;
-}
+
 .resourceImg:hover {
     transform: scale(1.1);
 }
@@ -35,4 +28,4 @@ h1 {
 .wrapper {
     background: transparent;
 }
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
+

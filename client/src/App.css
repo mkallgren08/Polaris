@@ -22,8 +22,6 @@
   font-size: large;
 }
 
-<<<<<<< HEAD
-=======
 .btn{
   background: #ACABAB; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left bottom, #ACABAB, #F1F1F1); /* For Safari 5.1 to 6.0 */
@@ -91,7 +89,6 @@
 }
 
 
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

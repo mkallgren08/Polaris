@@ -6,10 +6,6 @@ import Jumbotron from "../../components/Jumbotron";
 import "../../index.css"
 import "./Home.css";
 
-<<<<<<< HEAD
-//Configuring the Home page and pdf file links and display
-=======
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
 const Home = () =>
     <div>
         <Container fluid>
@@ -22,11 +18,7 @@ const Home = () =>
             <br /> <br /> <br />
             <Row>
                 <Col size="md-3" />
-<<<<<<< HEAD
                 <Col size="md-6">
-=======
-                <Col size="md-6 center">
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
                     <strong>
                     <p className="whiteText intro"><h2>Welcome to the Polaris emergency preparedness site</h2> 
                         <p>Emergencies and disasters can happen at any time.  Being prepared will provide you and your family

@@ -1,17 +1,10 @@
 body{
     background: linear-gradient(
-<<<<<<< HEAD
-        rgba(0, 0, 0, 0.7), 
-        rgba(0, 0, 0, 0.7)
-      ),url("../../images/volcano.jpg");
-    background-size: cover;
-=======
         rgba(0, 0, 0, 0.2), 
         rgba(0, 0, 0, 0.4)
       ),url("../../images/flooding.png");
     background-size: cover;
     height: 900px;
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
 }
 h1 {
     text-align: center;
@@ -42,10 +35,10 @@ p {
     color: white;
     font-family: 'Eczar', serif;
 }
-<<<<<<< HEAD
+
 .intro {
     font-size: 2rem;
-=======
+}
 
 .homePageBody{
     background: #808080; /* For browsers that do not support gradients */
@@ -68,5 +61,4 @@ p {
 
 .introText{
     text-shadow: 1px 1px #3A3A3A;
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
 }

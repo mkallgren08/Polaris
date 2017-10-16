@@ -21,11 +21,8 @@ const Resource = () =>
                         <a className="whiteText" href="/drone">
                             <img className="resourceImg" src="./images/drone.jpg" alt="drone" />
                             <br />
-<<<<<<< HEAD
                             Drones
-=======
                             <h3>Drones</h3>
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
                          </a>
                     </div>
                 </Col>
@@ -34,11 +31,8 @@ const Resource = () =>
                         <a className="whiteText" href="/firstaid">
                             <img className="resourceImg" src="./images/firstAid.png" alt="First Aid" />
                             <br />
-<<<<<<< HEAD
                             First Aid
-=======
                             <h3>First Aid</h3>
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
                         </a>
                     </div>
                 </Col>
@@ -47,11 +41,8 @@ const Resource = () =>
                         <a className="whiteText" href="/rafts">
                             <img className="resourceImg" src="./images/boats.jpg" alt="Rafts" />
                             <br />
-<<<<<<< HEAD
                             Rafts
-=======
                             <h3>Rafts</h3>
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
                         </a>
                     </div>
                 </Col>
@@ -63,11 +54,8 @@ const Resource = () =>
                         <a className="whiteText" href="/foodAndWater">
                             <img className="resourceImg" src="./images/foodAndWater.svg" alt="Food/Water" />
                             <br />
-<<<<<<< HEAD
                             Food/Water
-=======
                             <h3>Food/Water</h3>
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
                         </a>
                     </div>
                 </Col>
@@ -76,11 +64,8 @@ const Resource = () =>
                         <a className="whiteText" href="/generator">
                             <img className="resourceImg" src="./images/generator.jpg" alt="Generator" />
                             <br />
-<<<<<<< HEAD
                             Generator
-=======
                             <h3>Generator</h3>
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
                         </a>
                     </div>
                 </Col>
@@ -89,11 +74,8 @@ const Resource = () =>
                         <a className="whiteText" href="/generalResource">
                             <img className="resourceImg" src="./images/general.ico" alt="General" />
                             <br />
-<<<<<<< HEAD
                             Miscellaneous
-=======
                             <h3>Miscellaneous</h3>
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
                         </a>
                     </div>
                 </Col>

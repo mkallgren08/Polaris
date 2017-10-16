@@ -3,11 +3,9 @@ import { AUTH_CONFIG } from "./auth0-variables";
 import history from "../history";
 import API from "../utils/API";
 
-<<<<<<< HEAD
+
 //creating auth0 login app
 
-=======
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
 export default class Auth {
   requestedScopes = "openid email profile read:profile write:profile update:profile";
   auth0 = new auth0.WebAuth({
@@ -48,11 +46,9 @@ export default class Auth {
       }
     });
   }
-<<<<<<< HEAD
-//Configuring authorization session
-=======
 
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
+//Configuring authorization session
+
   setSession(authResult) {
     // Set the time that the access token will expire at
     let expiresAt = JSON.stringify(
@@ -72,10 +68,8 @@ export default class Auth {
     history.replace("/home");
   }
 
-<<<<<<< HEAD
 //Configuring Auth0 id token
-=======
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
+
   getIdToken() {
     const idToken = localStorage.getItem("id_token");
     if (!idToken) {
@@ -84,10 +78,9 @@ export default class Auth {
     return idToken;
   }
 
-<<<<<<< HEAD
+
 //Configuring Auth0 access token
-=======
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
+
   getAccessToken() {
     const accessToken = localStorage.getItem("access_token");
     if (!accessToken) {
@@ -96,21 +89,17 @@ export default class Auth {
     return accessToken;
   }
 
-<<<<<<< HEAD
   //getting the user profile
-=======
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
+
   getProfile(cb) {
     let accessToken = this.getAccessToken();
     this.auth0.client.userInfo(accessToken, (err, profile) => {
       cb(err, profile);
     });
   }
-<<<<<<< HEAD
-//Configuring the logout so it will clear user token data from local storage
-=======
 
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
+//Configuring the logout so it will clear user token data from local storage
+
   logout() {
     // Clear access token and ID token from local storage
     localStorage.removeItem("access_token");
@@ -121,10 +110,9 @@ export default class Auth {
     history.replace("/home");
   }
 
-<<<<<<< HEAD
+
   //Configuring token expiration
-=======
->>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
+
   isAuthenticated() {
     // Check whether the current time is past the
     // access token's expiry time
