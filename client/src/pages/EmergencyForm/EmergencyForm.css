@@ -1,0 +1,24 @@
+.formSectionHeader{
+    text-align: "center";
+     /* textDecoration: "underline", color: "white" */
+}
+
+.pageHeader{
+    background: #ACABAB; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left bottom, #ACABAB, #F1F1F1); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top right, #ACABAB, #F1F1F1); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top right, #ACABAB, #F1F1F1); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top right, #ACABAB, #F1F1F1); /* Standard syntax */
+
+    Color: #333333;
+
+    border: 2px #525252 solid;
+
+    border-radius: 30px 10px;
+
+    padding: 10px;
+
+    text-shadow: -1px -1px #222222;
+}
+
+

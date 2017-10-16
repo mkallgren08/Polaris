@@ -6,8 +6,12 @@ import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
 import Input from "../../components/Form/Input";
 import InputModal from "../../components/Modal/inputModal";
+<<<<<<< HEAD
 
 //Configuring Emergency Form
+=======
+import "./EmergencyForm.css"
+>>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
 
 class EmergencyForm extends Component {
     state = {
@@ -22,7 +26,10 @@ class EmergencyForm extends Component {
         }
     }
 
+<<<<<<< HEAD
     //Configuring form input
+=======
+>>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
     handleInputChange = event => {
         const { name, value } = event.target;
         this.setState({
@@ -30,8 +37,11 @@ class EmergencyForm extends Component {
         });
     };
 
+<<<<<<< HEAD
     //Configuring Form Submission
     //TODO: add authentication to the form submission
+=======
+>>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
     handleFormSubmit = event => {
         event.preventDefault();
         if (this.state.name && this.state.address && this.state.geoposition && this.state.safe) {
@@ -49,7 +59,10 @@ class EmergencyForm extends Component {
         }
     }
 
+<<<<<<< HEAD
     //render the form
+=======
+>>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
     render() {
         return (
             <Container fluid>
@@ -67,7 +80,11 @@ class EmergencyForm extends Component {
                             <h4 className="blackText">Full Name{/*{this.state.name}*/}</h4>
                             <h4 className="blackText">Location{/*{this.state.address}*/}</h4>
                             <InputModal>
+<<<<<<< HEAD
                                 <h2 className="blackText" style={{ textAlign: "center" }}>
+=======
+                                <h2 className="inputModal" style={{ textAlign: "center" }}>
+>>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
                                     Update Your Location
                                 </h2>
                                 <form>
@@ -92,7 +109,11 @@ class EmergencyForm extends Component {
                             <Col size="md-3">
                                 <Jumbotron >
                                     <div>
+<<<<<<< HEAD
                                         <h4 style={{ textAlign: "center", textDecoration: "underline", color: "white" }}>Let Your Family Know Your Safety Status:</h4>
+=======
+                                        <h4 className = "formSectionHeader" style={{ textAlign: "center", textDecoration: "underline", color: "white" }}>What is Your Safety Status?</h4>
+>>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
                                         <div className="radio" style={{ textAlign: "left" }}>
                                             <label style={{ color: "white", fontSize: "20px" }}><input type="radio" name="optradio" value="safe" />Safe</label>
                                         </div>
@@ -100,7 +121,11 @@ class EmergencyForm extends Component {
                                             <label style={{ color: "white", fontSize: "20px" }}><input type="radio" name="optradio" value="notSafe" />Not Safe</label>
                                         </div>
 
+<<<<<<< HEAD
                                         <h4 style={{ textAlign: "center", textDecoration: "underline", color: "white" }}>What Does Your Family Need: </h4>
+=======
+                                        <h4 style={{ textAlign: "center", textDecoration: "underline", color: "white" }}>What Do You Need? </h4>
+>>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
                                         <div className="checkbox" style={{ textAlign: "left" }}>
                                             <label style={{ color: "white", fontSize: "20px" }}><input type="checkbox" value="evacuation" />Evacuation</label>
                                         </div>
@@ -125,7 +150,11 @@ class EmergencyForm extends Component {
                         </div>
                     </Col>
                     <Col size="md-6">
+<<<<<<< HEAD
                         <h4 style={{ textAlign: "left", color: "black" }}>Please specify what you need:</h4>
+=======
+                        <h4 style={{ textAlign: "left", color: "white" }}>If you are not safe, please specify what you need for aid:</h4>
+>>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
                         <textarea style={{ height: "405px", width: "650px" }} />
                         <button className="blueBtn btn btn-default btn-lg">Submit</button>
                     </Col>

@@ -7,7 +7,10 @@ import Input from "../../components/Form/Input";
 import "./Profile.css";
 import InputModal from "../../components/Modal/inputModal";
 
+<<<<<<< HEAD
 //Creating profile page
+=======
+>>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
 class Profile extends Component {
   state = {
     name: "",
@@ -19,7 +22,10 @@ class Profile extends Component {
     email: ""
   };
 
+<<<<<<< HEAD
   //Setting up form input
+=======
+>>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
   handleInputChange = event => {
     const { name, value } = event.target;
     this.setState({
@@ -30,17 +36,27 @@ class Profile extends Component {
   componentDidMount() {
     this.loadUser();
   }
+<<<<<<< HEAD
 //Loading user info and getting auth token
   loadUser() {
     const { auth } = this.props;
 
     //passing Auth token to the API route
+=======
+
+  loadUser() {
+    const { auth } = this.props;
+
+>>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
     API.getProfile(auth.getAccessToken())
       .then(res => this.setState({ ...res.data }))
       .catch(err => console.log(err));
   }
 
+<<<<<<< HEAD
   //Setting up form submission with auth
+=======
+>>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
   handleFormSubmit = event => {
     event.preventDefault();
     if (
@@ -67,7 +83,11 @@ class Profile extends Component {
         .catch(err => console.log(err));
     }
   };
+<<<<<<< HEAD
 //Rendering the form
+=======
+
+>>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
   render() {
     return (
       <div>

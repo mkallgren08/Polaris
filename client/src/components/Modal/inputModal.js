@@ -1,5 +1,9 @@
 import React from "react";
 import Modal from 'react-modal';
+<<<<<<< HEAD
+=======
+import "./inputModal.css"
+>>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
 
 const customStyles = {
   content: {
@@ -41,7 +45,11 @@ class InputModal extends React.Component {
   render() {
     return (
       <div>
+<<<<<<< HEAD
         <button onClick={this.openModal} className="btn btn-default" style={{ backgroundColor: "#337ab7", color: "white", borderColor: "#337ab7" }}>
+=======
+        <button onClick={this.openModal} className="btn btn-default customButton" /*style={{ backgroundColor: "#337ab7", color: "white", borderColor: "#337ab7" }}*/>
+>>>>>>> d9d33187c5b9b9eb440a6b53d2d65e3f97a0e9ba
           Add/Update Info
         </button>
         <Modal
