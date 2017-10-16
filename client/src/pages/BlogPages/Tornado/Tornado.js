@@ -10,23 +10,13 @@ import InputModal from "../../../components/Modal/inputModal";
 class Tornado extends Component {
 
     state = {
-        Tornado: [],
+        tornado: [],
         title: "",
         author: "",
         link: "",
         body: "",
     }
 
-    componentDidMount() {
-        this.loadTornado();
-    }
-
-    loadTornado = () => {
-        API.getTornado()
-            .then(res =>
-                this.setState({ Tornado: res.data, title: "", author: "", link: "", body: "" })
-            ).catch(err => console.log(err));
-    };
 
     handleInputChange = event => {
         const { name, value } = event.target;
@@ -109,7 +99,49 @@ class Tornado extends Component {
                                     <h3 className="panel-title">Tornados</h3>
                                 </div>
                                 <div className="panel-body scroll">
-                                    Panel content
+                                    <table style={{ width: "100%", borderBottom: 'solid' }}>
+                                        <tr>
+                                            <th>
+                                                <div>
+                                                    Tornado Preparedness at Work by OSHA
+                                                <button className="btn btn-default btn-primary" style={{ marginLeft: "500px" }}>Save</button>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://www.osha.gov/dts/weather/tornado/preparedness.html" target="_blank">https://www.osha.gov/dts/weather/tornado/preparedness.html</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>The following steps are recommended to help ensure the safety of personnel if a tornado occurs:
+                                    Develop a system for knowing who is in the building in the event of an emergency.
+                                    Establish an alarm system to warn workers.
+                                    Test systems frequently.
+                                    Develop plans to communicate warnings to personnel with disabilities or who do not speak English.
+                                    Account for workers, visitors, and customers as they arrive in the shelter.
+                                    Use a prepared roster or checklist.
+                                    Take a head count.
+                                    Assign specific duties to workers in advance; create checklists for each specific responsibility. Designate and train workers alternates in case the assigned person is not there or is injured.
+                                    </td>
+                                        </tr>
+                                    </table>
+                                    <table style={{ width: "100%", borderBottom: 'solid' }}>
+                                        <tr>
+                                            <th>
+                                                <div>
+                                                    What to Do During a Tornado Watch by Joe Smith
+                                                    <button className="btn btn-default btn-primary" style={{ marginTop: '2px', marginLeft: "440px" }}>Save</button>
+                                                </div>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://www.illinois.gov/ready/hazards/Pages/Tornadoes.aspx" target="_blank">https://www.illinois.gov/ready/hazards/Pages/Tornadoes.aspx</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>1. Listen to a battery-powered NOAA Weather Radio or your local radio or television stations for updated information.
+                                        2. Be alert to rapidly-changing weather conditions. Watch for signs of a possible tornado.
+                                        3. Know where your family members are. Use this opportunity to review your Family Emergency Plan. Even if a tornado does not strike, there is still the likelihood of severe weather conditions.</td>
+                                        </tr>
+                                    </table>
                                 </div>
                             </div>
                         </Col>

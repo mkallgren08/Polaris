@@ -14,23 +14,13 @@ import InputModal from "../../components/Modal/inputModal";
 class Drone extends Component {
 
     state = {
-        drones: [],
+        drone: [],
         name: "",
         zipCode: "",
         phoneNumber: "",
         comment: "",
     }
 
-    componentDidMount() {
-        this.loadDrones();
-    }
-
-    loadDrones = () => {
-        API.getDrones()
-            .then(res =>
-                this.setState({ drones: res.data, name: "", zipCode: "", phoneNumber: "", comment: "" })
-            ).catch(err => console.log(err));
-    };
 
     handleInputChange = event => {
         const { name, value } = event.target;
@@ -111,26 +101,22 @@ class Drone extends Component {
                                 <div className="panel-heading">
                                     <h3 className="panel-title">Drones</h3>
                                 </div>
-                                <div className="panel-body scroll">
-                                    {this.state.drones ? (
-                                        <List>
-                                            {this.state.drones.map(drone => (
-                                                <ListItem key={drone._id}>
-                                                    <Link to={"/drones/" + drone._id}>
-                                                        <strong>
-                                                            {drone.name} <br />
-                                                            {drone.zipCode} <br />
-                                                            {drone.phoneNumber} <br />
-                                                            {drone.comment}
-                                                        </strong>
-                                                    </Link>
-                                                    <button className="blutBtn btn btn-default" onClick={() => this.handleFormSubmit(drone._id)}>Save</button>
-                                                </ListItem>
-                                            ))}
-                                        </List>
-                                    ) : (
-                                            <h3>No Results to Display</h3>
-                                        )}
+                                <div className="panel-body scroll blackText">
+                                    <table style={{ width: "100%", borderBottom: 'solid' }}>
+                                        <tr>
+                                            <th>Joe Smith</th>
+                                        </tr>
+                                        <tr>
+                                            <td>77004</td>
+                                        </tr>
+                                        <tr>
+                                            <td>(555) 555-5555</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Custom built delivery drone available for disaster relief in greater Houston area.
+                                        Capable of carrying 10 lbs, flight time of approx. 1 hour.</td>
+                                        </tr>
+                                    </table>
                                 </div>
                             </div>
                         </Col>

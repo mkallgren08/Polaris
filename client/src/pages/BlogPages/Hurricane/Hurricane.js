@@ -1,4 +1,4 @@
-/*import React, { Component } from "react";
+import React, { Component } from "react";
 import API from "../../../utils/API";
 import Col from "../../../components/Grid/Col";
 import Row from "../../../components/Grid/Row";
@@ -9,29 +9,17 @@ import ListItem from "../../../components/List/ListItem";
 import { Link } from "react-router-dom";
 import "./Hurricane.css";
 import InputModal from "../../../components/Modal/inputModal";
-import List from "../../../components/List/List";
-import ListItem from "../../../components/List/ListItem";
-import { Link } from "react-router-dom";
+
 class Hurricane extends Component {
 
     state = {
-        hurricanes: [],
+        hurricane: [],
         title: "",
         author: "",
         link: "",
         body: "",
     }
 
-    componentDidMount() {
-        this.loadHurricanes();
-    }
-
-    loadHurricanes = () => {
-        API.getHurricanes()
-            .then(res =>
-                this.setState({ hurricanes: res.data, title: "", author: "", link: "", body: "" })
-            ).catch(err => console.log(err));
-    };
 
     handleInputChange = event => {
         const { name, value } = event.target;
@@ -113,25 +101,43 @@ class Hurricane extends Component {
                                 <div className="panel-heading">
                                     <h3 className="panel-title">Hurricanes</h3>
                                 </div>
-                                <div className="panel-body scroll">
-                                    {this.state.hurricanes ? (
-                                        <List>
-                                            {this.state.hurricanes.map(hurricane => (
-                                                <ListItem key={hurricane._id}>
-                                                    <Link to={"/hurricanes/" + hurricane._id}>
-                                                        <strong>
-                                                            {hurricane.title} by {hurricane.author} <br />
-                                                            {hurricane.link} <br />
-                                                            {hurricane.body}
-                                                        </strong>
-                                                    </Link>
-                                                    <button className="blutBtn btn btn-default" onClick={() => this.handleFormSubmit(hurricane._id)}>Save</button>
-                                                </ListItem>
-                                            ))}
-                                        </List>
-                                    ) : (
-                                            <h3>No Results to Display</h3>
-                                        )}
+                                <div className="panel-body scroll blackText">
+                                    <table style={{ width: "100%", borderBottom: 'solid' }}>
+                                        <tr>
+                                            <th>Know Your (Evacuation) Zone by Brian Martin
+                                    <button className="btn btn-default btn-primary" style={{ marginLeft: "456px" }}>Save</button>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="https://blog.mass.gov/blog/safety/hurricane-preparedness-be-ready-before-the-storm/" target="_blank">https://blog.mass.gov/blog/safety/hurricane-preparedness-be-ready-before-the-storm/</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Coastal communities and areas around rivers and waterways that connect
+                                         to the ocean have designated hurricane evacuation zones — Zone A, Zone B, and Zone C —
+                                          based on their risk for storm surge flooding associated with tropical storms or hurricanes.
+                                           Local or state officials will use the hurricane evacuation zones to call for people living,
+                                            working, or vacationing in these areas to evacuate in the event of a tropical storm or
+                                             hurricane.  If you know your zone, you and your family will be better prepared to
+                                              evacuate.</td>
+                                        </tr>
+                                    </table>
+                                    <table style={{ width: "100%", borderBottom: 'solid' }}>
+                                        <tr>
+                                            <th>REPAIR AND MAINTENANCE by Ken Jorgustin
+                                    <button className="btn btn-default btn-primary" style={{ marginTop: '2px', marginLeft: "450px" }}>Save</button>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="http://modernsurvivalblog.com/weather-preparedness/a-hurricane-preparedness-list/" target="_blank">http://modernsurvivalblog.com/weather-preparedness/a-hurricane-preparedness-list/</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Plywood: Nailing plywood over windows is still the best option for protecting the inside of your house.
+                                     Sand bags: If you live in a low area, especially, use sand bags to dispel water.
+                                    Bring outside furniture indoors: Move patio furniture and pool toys into the garage.
+                                    Turn off utilities if you leave: Before evacuating, shut off power, propane gas and water, but leave on natural gas unless told to do so by authorities.
+                                    A licensed professional is the only one who can turn it back on.</td>
+                                        </tr>
+                                    </table>
                                 </div>
                             </div>
                         </Col>
@@ -144,4 +150,3 @@ class Hurricane extends Component {
 }
 
 export default Hurricane;
-*/
