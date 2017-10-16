@@ -2,7 +2,6 @@ import React from "react";
 import Modal from 'react-modal';
 import "./inputModal.css"
 
-
 const customStyles = {
   content: {
     top: '50%',
@@ -43,8 +42,7 @@ class InputModal extends React.Component {
   render() {
     return (
       <div>
-
-        <button onClick={this.openModal} className="btn btn-default" style={{ backgroundColor: "#337ab7", color: "white", borderColor: "#337ab7" }}>
+        <button onClick={this.openModal} className="btn btn-default customButton" /*style={{ backgroundColor: "#337ab7", color: "white", borderColor: "#337ab7" }}*/>
           Add/Update Info
         </button>
         <Modal

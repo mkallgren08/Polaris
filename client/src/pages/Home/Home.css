@@ -36,10 +36,6 @@ p {
     font-family: 'Eczar', serif;
 }
 
-.intro {
-    font-size: 2rem;
-}
-
 .homePageBody{
     background: #808080; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(left bottom, #808080, rgba(204, 204, 230, 0.95)); /* For Safari 5.1 to 6.0 */
