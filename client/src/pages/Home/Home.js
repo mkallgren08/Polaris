@@ -6,6 +6,7 @@ import Jumbotron from "../../components/Jumbotron";
 import "../../index.css"
 import "./Home.css";
 
+//Configuring the Home page and pdf file links and display
 const Home = () =>
     <div>
         <Container fluid>

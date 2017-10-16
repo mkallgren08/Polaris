@@ -1,13 +1,12 @@
 import React from 'react';
-import API from "../../utils/API";
 import Col from "../../components/Grid/Col";
 import Row from "../../components/Grid/Row";
 import Container from "../../components/Grid/Container";
-import Input from "../../components/Form/Input";
 import "./EmergencyMap.css";
-import InputModal from "../../components/Modal/inputModal";
 import { Map, InfoWindow, Marker, GoogleApiWrapper, google } from 'google-maps-react';
 
+
+//Creating the emergency map
 export class EmergencyMap extends React.Component {
 
     state = {
@@ -78,6 +77,7 @@ export class EmergencyMap extends React.Component {
         ]
     }
 
+    //Configuring the links to the Pips
     getPipColor = (needs) => {
         switch (needs) {
             case "none" || "unknown":

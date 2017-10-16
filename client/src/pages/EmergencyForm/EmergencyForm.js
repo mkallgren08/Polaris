@@ -7,6 +7,8 @@ import API from "../../utils/API";
 import Input from "../../components/Form/Input";
 import InputModal from "../../components/Modal/inputModal";
 
+//Configuring Emergency Form
+
 class EmergencyForm extends Component {
     state = {
         Form: [],
@@ -20,6 +22,7 @@ class EmergencyForm extends Component {
         }
     }
 
+    //Configuring form input
     handleInputChange = event => {
         const { name, value } = event.target;
         this.setState({
@@ -27,6 +30,8 @@ class EmergencyForm extends Component {
         });
     };
 
+    //Configuring Form Submission
+    //TODO: add authentication to the form submission
     handleFormSubmit = event => {
         event.preventDefault();
         if (this.state.name && this.state.address && this.state.geoposition && this.state.safe) {
@@ -44,6 +49,7 @@ class EmergencyForm extends Component {
         }
     }
 
+    //render the form
     render() {
         return (
             <Container fluid>

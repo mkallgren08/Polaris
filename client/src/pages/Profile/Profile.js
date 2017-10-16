@@ -7,6 +7,7 @@ import Input from "../../components/Form/Input";
 import "./Profile.css";
 import InputModal from "../../components/Modal/inputModal";
 
+//Creating profile page
 class Profile extends Component {
   state = {
     name: "",
@@ -18,6 +19,7 @@ class Profile extends Component {
     email: ""
   };
 
+  //Setting up form input
   handleInputChange = event => {
     const { name, value } = event.target;
     this.setState({
@@ -28,15 +30,17 @@ class Profile extends Component {
   componentDidMount() {
     this.loadUser();
   }
-
+//Loading user info and getting auth token
   loadUser() {
     const { auth } = this.props;
 
+    //passing Auth token to the API route
     API.getProfile(auth.getAccessToken())
       .then(res => this.setState({ ...res.data }))
       .catch(err => console.log(err));
   }
 
+  //Setting up form submission with auth
   handleFormSubmit = event => {
     event.preventDefault();
     if (
@@ -63,7 +67,7 @@ class Profile extends Component {
         .catch(err => console.log(err));
     }
   };
-
+//Rendering the form
   render() {
     return (
       <div>

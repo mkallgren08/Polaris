@@ -12,9 +12,11 @@ if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
 
+//making sure the .env file with the Auth0 config is present
 if (!process.env.AUTH0_DOMAIN || !process.env.AUTH0_AUDIENCE) {
   throw "Make sure you have AUTH0_DOMAIN, and AUTH0_AUDIENCE in your .env file";
 }
+
 //Creating middleware for checking the JSON Web Token
 const checkJwt = jwt({
   secret: jwksRsa.expressJwtSecret({
@@ -30,6 +32,7 @@ const checkJwt = jwt({
   algorithms: ["RS256"]
 });
 
+//Configuring backend routes for to get and post user profile data
 router.get("/users/profile", checkJwt, jwtAuthz(["read:profile"]), function(
   req,
   res
@@ -59,6 +62,7 @@ router.post(
   }
 );
 
+//post route for file uploads using multer
 router.post("/", multer({ dest: "./uploads/" }).single("upl"), function(
   req,
   res

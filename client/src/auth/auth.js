@@ -3,6 +3,8 @@ import { AUTH_CONFIG } from "./auth0-variables";
 import history from "../history";
 import API from "../utils/API";
 
+//creating auth0 login app
+
 export default class Auth {
   requestedScopes = "openid email profile read:profile write:profile update:profile";
   auth0 = new auth0.WebAuth({
@@ -43,7 +45,7 @@ export default class Auth {
       }
     });
   }
-
+//Configuring authorization session
   setSession(authResult) {
     // Set the time that the access token will expire at
     let expiresAt = JSON.stringify(
@@ -63,6 +65,7 @@ export default class Auth {
     history.replace("/home");
   }
 
+//Configuring Auth0 id token
   getIdToken() {
     const idToken = localStorage.getItem("id_token");
     if (!idToken) {
@@ -71,6 +74,7 @@ export default class Auth {
     return idToken;
   }
 
+//Configuring Auth0 access token
   getAccessToken() {
     const accessToken = localStorage.getItem("access_token");
     if (!accessToken) {
@@ -79,13 +83,14 @@ export default class Auth {
     return accessToken;
   }
 
+  //getting the user profile
   getProfile(cb) {
     let accessToken = this.getAccessToken();
     this.auth0.client.userInfo(accessToken, (err, profile) => {
       cb(err, profile);
     });
   }
-
+//Configuring the logout so it will clear user token data from local storage
   logout() {
     // Clear access token and ID token from local storage
     localStorage.removeItem("access_token");
@@ -96,6 +101,7 @@ export default class Auth {
     history.replace("/home");
   }
 
+  //Configuring token expiration
   isAuthenticated() {
     // Check whether the current time is past the
     // access token's expiry time
