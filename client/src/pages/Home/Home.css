@@ -1,9 +1,10 @@
 body{
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.7), 
-        rgba(0, 0, 0, 0.7)
-      ),url("../../images/volcano.jpg");
+    background: linear-gradient(to bottom,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0)),
+    url("../../images/volcano.jpg");
     background-size: cover;
+    height: 900px;
 }
 h1 {
     text-align: center;
@@ -36,4 +37,5 @@ p {
 }
 .intro {
     font-size: 2rem;
+   text-align: center;
 }
