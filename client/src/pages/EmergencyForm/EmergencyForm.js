@@ -6,7 +6,6 @@ import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
 import Input from "../../components/Form/Input";
 import InputModal from "../../components/Modal/inputModal";
-import "./EmergencyForm.css"
 
 class EmergencyForm extends Component {
     state = {
@@ -62,7 +61,7 @@ class EmergencyForm extends Component {
                             <h4 className="blackText">Full Name{/*{this.state.name}*/}</h4>
                             <h4 className="blackText">Location{/*{this.state.address}*/}</h4>
                             <InputModal>
-                                <h2 className="inputModal" style={{ textAlign: "center" }}>
+                                <h2 className="blackText" style={{ textAlign: "center" }}>
                                     Update Your Location
                                 </h2>
                                 <form>
@@ -87,7 +86,7 @@ class EmergencyForm extends Component {
                             <Col size="md-3">
                                 <Jumbotron >
                                     <div>
-                                        <h4 className = "formSectionHeader" style={{ textAlign: "center", textDecoration: "underline", color: "white" }}>What is Your Safety Status?</h4>
+                                        <h4 style={{ textAlign: "center", textDecoration: "underline", color: "white" }}>Let Your Family Know Your Safety Status:</h4>
                                         <div className="radio" style={{ textAlign: "left" }}>
                                             <label style={{ color: "white", fontSize: "20px" }}><input type="radio" name="optradio" value="safe" />Safe</label>
                                         </div>
@@ -95,7 +94,7 @@ class EmergencyForm extends Component {
                                             <label style={{ color: "white", fontSize: "20px" }}><input type="radio" name="optradio" value="notSafe" />Not Safe</label>
                                         </div>
 
-                                        <h4 style={{ textAlign: "center", textDecoration: "underline", color: "white" }}>What Do You Need? </h4>
+                                        <h4 style={{ textAlign: "center", textDecoration: "underline", color: "white" }}>What Does Your Family Need: </h4>
                                         <div className="checkbox" style={{ textAlign: "left" }}>
                                             <label style={{ color: "white", fontSize: "20px" }}><input type="checkbox" value="evacuation" />Evacuation</label>
                                         </div>
@@ -120,7 +119,7 @@ class EmergencyForm extends Component {
                         </div>
                     </Col>
                     <Col size="md-6">
-                        <h4 style={{ textAlign: "left", color: "white" }}>If you are not safe, please specify what you need for aid:</h4>
+                        <h4 style={{ textAlign: "left", color: "black" }}>Please specify what you need:</h4>
                         <textarea style={{ height: "405px", width: "650px" }} />
                         <button className="blueBtn btn btn-default btn-lg">Submit</button>
                     </Col>

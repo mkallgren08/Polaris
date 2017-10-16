@@ -2,12 +2,12 @@
     margin: 20px;
     height: 250px;
     width: 250px;
-    border: solid 5px #CCC;
-    background: #ffffff;
-    transition: all 0.5s;
-    background-size: cover;
-    border-radius: 30px;
 }
+
+h1 {
+    text-align: center;
+}
+
 .resourceImg:hover {
     transform: scale(1.1);
 }
@@ -28,3 +28,4 @@
 .wrapper {
     background: transparent;
 }
+

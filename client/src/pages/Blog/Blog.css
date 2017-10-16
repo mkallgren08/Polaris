@@ -17,8 +17,8 @@ h1 {
 
 a {
     text-align: center;
-    
 }
+
 a:hover {
     text-decoration: none;
 }
@@ -32,3 +32,4 @@ a:hover {
 .background-unfill {
     background: transparent!important;
 }
+
