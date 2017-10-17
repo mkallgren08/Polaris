@@ -34,9 +34,9 @@ export const makeMainRoutes = () => {
         <Route path="/home" render={props => <Home auth={auth} {...props} />} />
         <Route path="/blog" render={props => <Blog auth={auth} {...props} />} />
         <Route path="/resource" render={props => <Resource auth={auth} {...props} />} />
-        <Route path="/drone" render={props => <Blog auth={auth} {...props} />} />
-        <Route path="/hurricane" render={props => <Blog auth={auth} {...props} />} />
-        <Route path="/tornado" render={props => <Blog auth={auth} {...props} />} />
+        <Route path="/drone" render={props => <Drone auth={auth} {...props} />} />
+        <Route path="/hurricane" render={props => <Hurricane auth={auth} {...props} />} />
+        <Route path="/tornado" render={props => <Tornado auth={auth} {...props} />} />
 
         <Route
           path="/profile"
