@@ -12,6 +12,9 @@ import Resource from "./pages/Resource";
 import EmergencyForm from "./pages/EmergencyForm/EmergencyForm";
 import EmergencyMap from "./pages/EmergencyMap/EmergencyMap";
 
+
+//Setting up page routing.  Determining which pages are displayed
+//depending on users login status
 const auth = new Auth();
 
 const handleAuthentication = (nextState, replace) => {
