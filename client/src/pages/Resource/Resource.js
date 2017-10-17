@@ -22,6 +22,7 @@ const Resource = () =>
                             <img className="resourceImg" src="./images/drone.jpg" alt="drone" />
                             <br />
                             Drones
+                            <h3>Drones</h3>
                          </a>
                     </div>
                 </Col>
@@ -31,6 +32,7 @@ const Resource = () =>
                             <img className="resourceImg" src="./images/firstAid.png" alt="First Aid" />
                             <br />
                             First Aid
+                            <h3>First Aid</h3>
                         </a>
                     </div>
                 </Col>
@@ -40,6 +42,7 @@ const Resource = () =>
                             <img className="resourceImg" src="./images/boats.jpg" alt="Rafts" />
                             <br />
                             Rafts
+                            <h3>Rafts</h3>
                         </a>
                     </div>
                 </Col>
@@ -52,6 +55,7 @@ const Resource = () =>
                             <img className="resourceImg" src="./images/foodAndWater.svg" alt="Food/Water" />
                             <br />
                             Food/Water
+                            <h3>Food/Water</h3>
                         </a>
                     </div>
                 </Col>
@@ -61,6 +65,7 @@ const Resource = () =>
                             <img className="resourceImg" src="./images/generator.jpg" alt="Generator" />
                             <br />
                             Generator
+                            <h3>Generator</h3>
                         </a>
                     </div>
                 </Col>
@@ -70,6 +75,7 @@ const Resource = () =>
                             <img className="resourceImg" src="./images/general.ico" alt="General" />
                             <br />
                             Miscellaneous
+                            <h3>Miscellaneous</h3>
                         </a>
                     </div>
                 </Col>

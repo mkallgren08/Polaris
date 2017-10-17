@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import loading from './loading.svg';
 
+
+//Configuring the Auth0 callback
+
 class Callback extends Component {
   render() {
     const style = {
