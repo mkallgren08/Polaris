@@ -3,7 +3,6 @@ import Col from "../../components/Grid/Col";
 import Row from "../../components/Grid/Row";
 import Container from "../../components/Grid/Container";
 import Jumbotron from "../../components/Jumbotron";
-import "../../index.css"
 import "./Home.css";
 
 const Home = () =>
@@ -11,7 +10,7 @@ const Home = () =>
         <Container fluid>
             <Row>
                 <Col size="md-3">
-                    <h1 className="pageHeader whiteText">POLARIS</h1>
+                    <h1 className="pageHeader">POLARIS</h1>
                 </Col>
                 <Col size="md-7" />
             </Row>

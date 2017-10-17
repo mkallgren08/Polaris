@@ -29,12 +29,12 @@ p {
 .blackText {
     color: black;
 }
-.pageHeader {
+/* .pageHeader {
     text-align: center;
     background: transparent;
     color: white;
     font-family: 'Eczar', serif;
-}
+} */
 
 .intro {
     font-size: 2rem;

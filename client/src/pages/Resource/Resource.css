@@ -19,12 +19,7 @@ h1 {
     width: 250px;
     
 }
-.pageHeader {
-    color: white;
-    background: black;
-    padding: 15px;
-    border-radius: 15px;
-}
+
 .wrapper {
     background: transparent;
 }
