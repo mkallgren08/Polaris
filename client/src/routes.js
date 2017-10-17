@@ -15,6 +15,9 @@ import Tornado from "./pages/BlogPages/Tornado";
 import EmergencyForm from "./pages/EmergencyForm/EmergencyForm";
 import EmergencyMap from "./pages/EmergencyMap/EmergencyMap";
 
+
+//Setting up page routing.  Determining which pages are displayed
+//depending on users login status
 const auth = new Auth();
 
 const handleAuthentication = (nextState, replace) => {
@@ -30,13 +33,11 @@ export const makeMainRoutes = () => {
         <Route path="/" render={props => <App auth={auth} {...props} />} />
         <Route path="/home" render={props => <Home auth={auth} {...props} />} />
         <Route path="/blog" render={props => <Blog auth={auth} {...props} />} />
-        <Route path="/drone" render={props => <Drone auth={auth} {...props} />} />
-        <Route path="/hurricane" render={props => <Hurricane auth={auth} {...props} />} />
-        <Route path="/tornado" render={props => <Tornado auth={auth} {...props} />} />
-        <Route
-          path="/resource"
-          render={props => <Resource auth={auth} {...props} />}
-        />
+        <Route path="/resource" render={props => <Resource auth={auth} {...props} />} />
+        <Route path="/drone" render={props => <Blog auth={auth} {...props} />} />
+        <Route path="/hurricane" render={props => <Blog auth={auth} {...props} />} />
+        <Route path="/tornado" render={props => <Blog auth={auth} {...props} />} />
+
         <Route
           path="/profile"
           render={props =>
